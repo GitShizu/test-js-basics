@@ -1,5 +1,13 @@
 
 
+const invertiStringa = (stringa)=>{
+    let stringaInvertita ='';
+    for(let i=stringa.length -1; i>0; i--){
+        stringaInvertita += stringa[i];
+    }
+    return stringaInvertita
+}
+
 const analizzaTesto = (stringa)=>{
     const stringaTrimmata = stringa.trim();
     let contieneJS = stringa.includes('JS') || stringa.includes('JavaScript') ? true : false;
@@ -15,12 +23,6 @@ const analizzaTesto = (stringa)=>{
     return oggetto
 }
 
-const invertiStringa = (stringa)=>{
-    let stringaInvertita ='';
-    for(let i=stringa.length -1; i>0; i--){
-        stringaInvertita += stringa[i];
-    }
-    return stringaInvertita
-}
 
-console.log(analizzaTesto(' Testo Da Analizzare JavaScript'));
+// // Test
+// console.log(analizzaTesto(' Testo Da Analizzare JavaScript'));
