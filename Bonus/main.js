@@ -29,7 +29,8 @@ const trasformaOggettoInLista = (oggetto)=>{
         const chiave = chiavi[i];
         const valore = oggetto[chiave];
         const voceLista = document.createElement('li');
-        voceLista.innerHTML = `${chiave} ${valore}`;
+        voceLista.innerText = `${chiave}: ${valore}`;
+        lista.appendChild(voceLista);
     }
     return lista
 }
@@ -43,9 +44,8 @@ window.addEventListener('load', ()=>{
     bottoneInvio.addEventListener('click', ()=>{
         if(input.value !== ''){
         const inputOggetto = analizzaTesto(input.value);
-        console.log(inputOggetto);
         const mostraRisultato = document.createElement('p');
-        mostraRisultato.innerHTML= trasformaOggettoInLista(inputOggetto);
+        mostraRisultato.appendChild(trasformaOggettoInLista(inputOggetto));
         document.body.appendChild(mostraRisultato);
         }else{
             alert('Inserisci del testo prima di inviare!')
