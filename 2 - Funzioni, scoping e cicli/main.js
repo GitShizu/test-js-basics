@@ -16,14 +16,19 @@ const riempiArray = (numeroElementi, valoreMinimo, valoreMassimo)=>{
 const contaPariDispari = (array)=>{
     pari=0;
     dispari=0;
+    
     for(i=0; i<array.length; i++){
         const elemento = array[i];
         (elemento % 2 === 0) ? pari++ : dispari++;        
     }
-    return `Pari: ${pari}, Dispari: ${dispari}`
+    conteggioPariDispari = {
+        pari: pari,
+        dispari: dispari
+    };
+    return conteggioPariDispari
 }
 
 
 // Test
-// const arrayTest = riempiArray(15,4,126);
-// console.log(arrayTest, contaPariDispari(arrayTest));
+const arrayTest = riempiArray(15,4,126);
+console.log(arrayTest, contaPariDispari(arrayTest));
