@@ -17,10 +17,10 @@ const analizzaTesto = (stringa)=>{
 
 const invertiStringa = (stringa)=>{
     let stringaInvertita ='';
-    for(let i=stringa.length; i>0; i--){
+    for(let i=stringa.length -1; i>0; i--){
         stringaInvertita += stringa[i];
     }
     return stringaInvertita
 }
 
-console.log(analizzaTesto('testo da analizzare'));
+console.log(analizzaTesto(' Testo Da Analizzare JavaScript'));
