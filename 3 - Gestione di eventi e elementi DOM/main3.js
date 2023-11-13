@@ -7,6 +7,7 @@ window.addEventListener('load', ()=>{
         const mostraRisultato = document.createElement('p')
         mostraRisultato.innerText = input.value;
         document.body.appendChild(mostraRisultato);
+        input.value='';
         }else{
             alert('Inserisci del testo prima di inviare!')
         }

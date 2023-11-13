@@ -20,8 +20,8 @@ const contaPariDispari = (array)=>{
     for(i=0; i<array.length; i++){
         const elemento = array[i];
         (elemento % 2 === 0) ? pari++ : dispari++;        
-    }
-    conteggioPariDispari = {
+    };
+    let conteggioPariDispari = {
         pari: pari,
         dispari: dispari
     };
@@ -30,5 +30,5 @@ const contaPariDispari = (array)=>{
 
 
 // Test
-const arrayTest = riempiArray(15,4,126);
-console.log(arrayTest, contaPariDispari(arrayTest));
+// const arrayTest = riempiArray(15,4,126);
+// console.log(arrayTest, contaPariDispari(arrayTest));

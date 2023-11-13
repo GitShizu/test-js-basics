@@ -1,5 +1,6 @@
 *{
     font-family: sans-serif;
+    border-style: border-box;
 }
 
 body {
@@ -25,4 +26,5 @@ body {
 ul {
     background-color: rgb(202, 214, 219);
     padding: 1rem 0 1rem 2rem; 
+    border-radius: 5px;
 }
